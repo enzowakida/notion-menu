@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: #1e293b; /* Cor escura elegante */
+    padding: 15px 30px;        /* Espaçamento interno (cima/baixo e lados) */
+    width: 100%;               /* Ocupa a largura total da tela */
+
+     /* ADICIONE ESTAS DUAS LINHAS: */
+    display: flex;
+     /* Empurra a logo pra esquerda e o menu pra direita */
+    align-items: center;            /* Alinha os dois perfeitamente na vertical */
+}
+
+/* Coloca a imagem e o texto da logo lado a lado */
+.logo {
+    display: flex;
+    align-items: center; /* Alinha na altura certinha */
+    gap: 10px;           /* Espaço entre a imagem e a palavra */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: flex-start;
+}
+
+/* Controla o tamanho da imagem da logo para não quebrar a tela */
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+/* Transforma os itens da lista <ul> em uma linha horizontal */
+.menu ul {
+    list-style: none; /* Remove as bolinhas do HTML */
+    display: flex;     /* Coloca os itens lado a lado */
+    gap: 20px;         /* Espaço entre um link e outro */
+    justify-content: space-between;
+}
+
+/* Tira o sublinhado e define a cor dos links */
+.menu a {
+    color: #ffffff;
+    text-decoration: none; /* Tira o sublinhado */
+    font-weight: 500;
+    transition: 0.3s;      /* Deixa a mudança de cor suave */
+}
+
+/* O que acontece quando passa o ponteiro do mouse por cima do link */
+.menu a:hover {
+    color: #38bdf8; /* Muda para azul claro */
+}

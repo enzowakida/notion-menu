@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rodape {
+    background-color: #1e293b; /* Cor escura elegante */
+    padding: 15px 30px;        /* Espaçamento interno (cima/baixo e lados) */
+    width: 100%;               /* Ocupa a largura total da tela */
+
+     /* ADICIONE ESTAS DUAS LINHAS: */
+    display: flex;
+    justify-content: center; /* Empurra a logo pra esquerda e o menu pra direita */
+    align-items: center;            /* Alinha os dois perfeitamente na vertical */
+}
+
+ ul {
+    list-style: none; /* Remove as bolinhas do HTML */
+    display: flex;     /* Coloca os itens lado a lado */
+    gap: 20px;         /* Espaço entre um link e outro */
+}
+
+ul img {
+    width: 50px;
+    height: 50px;
+}
+
+body {
+    display: flex;
+    height: 100dvh;
+    align-items: flex-end;
+}
